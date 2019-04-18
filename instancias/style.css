@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.vue-instance {
+  margin: 80px auto;
+  max-width: 480px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  position: relative;
+  transition: border .25s ease;
+  cursor: default;
+}
+
+.vue-instance:hover {
+  border-color: #ccc;
+  box-shadow: 0 3px 10px rgba(0,0,0,.03);
+}
+
+.vue-instance *::before,
+.vue-instance::before {
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  color: #ccc;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.vue-instance div,
+.vue-instance h1,
+.vue-instance p {
+  position: relative;
+  margin-top: 20px;
+  transition: padding .25s ease;
+}
+
+.vue-instance div:not(:last-child),
+.vue-instance h1:not(:last-child),
+.vue-instance p:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.vue-instance div:hover,
+.vue-instance h1:hover,
+.vue-instance p:hover {
+  padding-left: 10px;
+}
+
+.vue-instance::before {
+  content: 'Instância do vue';
+  color: green;
+}
+
+.vue-instance>h1::before {
+  content: 'Título da aplicação';
+}
+
+.vue-instance>p::before {
+  content: 'Parágrafo';
+}
+
+.vue-instance .component {
+  border-radius: 5px;
+  border: 1px solid rgb(253, 228, 146);
+  padding: 7.5px;
+  position: relative;
+}
+
+.vue-instance .component::before {
+  content: 'Componente';
+}
