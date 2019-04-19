@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+#app {
+  max-width: 480px;
+  margin: 40px auto;
+}
+
+main {
+  text-align: right;
+}
+
+.person {
+  background-color: darkseagreen;
+  padding: 15px;
+  border: 1px solid darkolivegreen;
+  border-radius: 5px;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.person .name::before {
+  content: 'Name:'
+}
+
+.person .age::before {
+  content: 'Age:'
+}
+
+
+button {
+  border: 1px solid darkolivegreen;
+  background: transparent;
+  color: darkolivegreen;
+  font-family: 'Ubuntu Mono';
+  padding: 7.5px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:focus {
+  border-color: black;
+  color: black;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data and Methods</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div id="app">
+    <header>
+      <h1>{{ title }}</h1>
+    </header>
+    <main>
+      
+      <div class="person">
+        <div class="name">
+          {{ person.name }}
+        </div>
+        <div class="age">
+          {{ ageSentence(person.age) }}
+        </div>
+      </div>
+
+      <button @click="alterTitle">
+        Alter title
+      </button>
+
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
