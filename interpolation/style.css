@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700,900');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #DCEAB2;
+  font-family: 'Nunito';
+}
+
+#app {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 15px;
+  background-color: #fff;
+  color: #75B9BE;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0,0,0,.1);
+}
+
+#app h1 {
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+#app div,
+#app p,
+#app a,
+#app button {
+  font-size: .9em;
+  margin: 10px 0;
+  display: block;
+}
+
+#app a {
+  display: block;
+  color: #C7D66D;
+  text-decoration: none;
+  border-bottom: 1px dashed;  
+  display: inline-block;
+  margin: 5px 0;
+  transition: .25s ease;
+}
+
+#app a:hover {
+  color: #B3D6C6;
+  border-color: #B3D6C6;
+}
+
+#app button {
+  border: 1px solid #C7D66D;
+  color: #fff;
+  padding: 7.5px;
+  background-color: #C7D66D;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+#app button:disabled {
+  background-color: rgba(198, 214, 109, 0.205);
+  border-color: rgba(198, 214, 109, 0.205);
+  color: rgba(198, 214, 109, 0.4);
+  cursor: not-allowed;
+}
